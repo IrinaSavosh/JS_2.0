@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .product {
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .review {
+        border-top: 1px solid #ccc;
+        padding: 10px 0;
+      }
+      .product-title {
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+      .dropdown {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Отзывы о продуктах</h1>
+
+    <select id="productSelect" class="dropdown">
+      <option value="">Выберите телефон</option>
+      <option value="Apple iPhone 13">Apple iPhone 13</option>
+      <option value="Samsung Galaxy Z Fold 3">Samsung Galaxy Z Fold 3</option>
+      <option value="Sony PlayStation 5">Sony PlayStation 5</option>
+    </select>
+    <div>
+      <textarea
+        id="reviewInput"
+        rows="4"
+        cols="50"
+        placeholder="Введите ваш отзыв..."
+      ></textarea
+      ><br />
+      <button id="submitReview">Отправить отзыв</button>
+
+      <div class="review-container" id="reviewContainer"></div>
+    </div>
+
+    <!-- <script src="1.js"></script> -->
+    <script src="2.js"></script>
+  </body>
+</html>
